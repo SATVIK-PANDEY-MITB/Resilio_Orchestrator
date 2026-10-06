@@ -413,17 +413,6 @@ On Windows, use `Remove-Item -Recurse -Force node_modules, package-lock.json` be
 
 The backend prints whether the model file was found. The application continues to operate with rule-based responses if the model is absent. No additional configuration is required for the demo workflow.
 
-## Known Limitations
-
-- AI responses are currently rule-based; no real GGUF inference is implemented.
-- KPI values and charts are sample data when no dataset-specific calculation is implemented.
-- Excel processing is partially simulated for certain file types.
-- The API client is hard-coded to `http://localhost:8002`.
-- `main.py` is a legacy backend entry point and is not the active default server path.
-- Multipart uploads are not validated for large-file size limits.
-- Authentication is demo-oriented and is not a secure production identity system.
-- Uploaded datasets are stored locally in the `data/` directory.
-
 ## Contributing
 
 1. Fork the repository.
